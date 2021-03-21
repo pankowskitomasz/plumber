@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/styles.min.css"/>
     <link rel="icon" href="img/favicon.png"/>
-    <title>Error</title>
+    <title>Plumber | Appointments</title>
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+<body class="bg-white">
+    <header class="position-absolute w-100 z-100 px-3">
+        <nav class="navbar navbar-expand-md navbar-light opacity-7">
             <a href="#" class="navbar-brand ms-2">
                 <img src="img/navbar_logo.png" class="" alt="logo"/>
             </a>
@@ -20,22 +20,31 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="main-nav">
-                <ul class="navbar-nav ms-auto p-2 text-end">
+                <ul class="navbar-nav ms-auto p-2 text-end fw-bolder">
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="index.html" class="nav-link text-dark-blue hover-opacity">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="appointments.html" class="nav-link text-dark-blue hover-opacity">Appointments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link text-dark-blue hover-opacity">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link text-dark-blue hover-opacity">Contact</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
-        <section class="error-s1 container-fluid d-flex align-items-center minh-100vh bg-dark">
-            <div class="row w-100 mx-0">
-                <div class="col-12 col-sm-10 col-md-6 col-lg-5 col-xl-4 mx-auto text-center">
-                    <h2 class="text-white fw-bold mb-3">Page not found!</h2>
-                    <a href="index.html" class="text-decoration-none btn btn-outline-light">
-                        Back to <span class="fw-bold">Home</span>
-                    </a>
+        <section class="appointments-s1 container d-flex align-items-center justify-content-center minh-100vh pt-5">
+            <div class="row w-100 mx-0 py-5">
+                <div class="mx-auto w-100 text-center">
+                    <span class="spinner-border text-primary"></span>
+                    <p class="text-primary">
+                        Loading...
+                    </p>
                 </div>
             </div>
         </section>
@@ -54,7 +63,7 @@
                     </p>
                 </div>
             </div>
-        </div>  
+        </div> 
     </footer>
     <script src="js/main.min.js"></script>
 </body>

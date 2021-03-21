@@ -1,3 +1,24 @@
+.bg{
+    &-aqua{
+        background-color: $color__aqua;
+    }
+}
+
+.border{
+    &-bold{
+        border-width: 4px;
+    }
+}
+
+.contact{
+    &-s2{
+        background-image: url($index-s4__img);
+        background-size: contain;
+        background-position: right bottom;
+        background-repeat: no-repeat;
+    }
+}
+
 .comingsoon{
     &-s1{
         @include set-background($comingsoon-img,0,"center","cover","fixed");
@@ -10,6 +31,18 @@
     }
 }
 
+.h{
+    &-100vh{
+        height:100vh;
+    }
+}
+
+.maxh{
+    &-768{
+        max-height: 768px;
+    }
+}
+
 .privacy{
     &-s1{
         @include set-background($privacy-img,0,"center","cover","fixed");
@@ -17,9 +50,67 @@
 }
 
 .hover{
+    &-opacity{
+        &:hover{
+            opacity: $hover-opacity__opacity;
+        }
+    }
     &-underline{
         &:hover{
             text-decoration: underline !important;
+        }
+    }
+}
+
+.index{
+    &-s4{
+        background-image: url($index-s4__img);
+        background-size: contain;
+        background-position: right bottom;
+        background-repeat: no-repeat;
+    }
+}
+
+.opacity{
+    &-7{
+        opacity: 0.7;
+    }
+    &-8{
+        opacity: 0.8;
+    }
+    &-9{
+        opacity: 0.9;
+    }
+}
+
+.text{
+    &-dark-blue{
+        color: $color__dark-blue !important;
+    }
+}
+
+.z{
+    &-100{
+        z-index:100;
+    }
+}
+
+@media all and (min-width: 576px){
+    .border{
+        &-caption{
+            border-right: $border__caption;
+        }
+    }
+}
+
+@media all and (max-width: 767px){
+    .navbar{
+        &-collapse.collapse{
+            &.show{
+                background-color:#fff;
+                border: 1px solid #aaa;
+                border-radius: 15px;
+            }
         }
     }
 }

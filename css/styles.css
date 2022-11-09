@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "StickNoBills";
+  src: url("../fonts/StickNoBills-VariableFont_wght.ttf");
+}
 /* line 1, ../sass/partials/_layout.scss */
 * {
   box-sizing: border-box;
@@ -103,14 +107,20 @@ body, html {
   z-index: 100;
 }
 
+/* line 98, ../sass/partials/_modules.scss */
+h1, h2, h3, h4, h5, h6, .nav-link {
+  font-family: "StickNoBills";
+  letter-spacing: 1px;
+}
+
 @media all and (min-width: 576px) {
-  /* line 100, ../sass/partials/_modules.scss */
+  /* line 105, ../sass/partials/_modules.scss */
   .border-caption {
     border-right: 4px solid #011432;
   }
 }
 @media all and (max-width: 767px) {
-  /* line 109, ../sass/partials/_modules.scss */
+  /* line 114, ../sass/partials/_modules.scss */
   .navbar-collapse.collapse.show {
     background-color: #fff;
     border: 1px solid #aaa;
